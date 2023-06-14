@@ -1,0 +1,45 @@
+@media screen and (min-width: 468px) and (max-width: 767px) {
+
+    .hero-section{
+        width: 468px;
+    }
+
+    .advantages-section{
+        width: 468px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+
+    .hero-section{
+        width: 768px;
+    }
+
+    .advantages-section{
+        width: 768px;
+    }
+
+    .hero-titel {
+    
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    
+    }
+
+    .advant-item{
+        width: calc((100% - 24px) /2);
+        width: 356px;
+             
+    }
+    .advant-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        text-align: start;
+        
+    }
+
+   
+}
