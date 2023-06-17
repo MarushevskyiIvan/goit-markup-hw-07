@@ -1,22 +1,68 @@
-@media screen and (min-width: 468px) and (max-width: 767px) {
+@media screen and (min-width: 468px) and (max-width: 767.98px) {
 
-    .hero-section{
-        width: 468px;
+    .hero-container {
+        width: 428px;
     }
 
     .advantages-section{
-        width: 468px;
+        width: 428px;
     }
-    
+    .team-list{
+        width: 428px;
+    }
+
+    .customers{
+        width: 428px;
+        
+    }
+
+    .footer-container {
+        
+        width: 428px;
+      }
 }
+
+@media screen and (max-width: 392px) {
+    .modal{
+    width: 100%;}
+}
+
 @media screen and (min-width: 768px) {
 
-    .hero-section{
-        width: 768px;
+    .nav-item {
+       
+        display: flex;
     }
 
-    .advantages-section{
+    .contacts {
+       
+        display: block;
+      }
+
+    .contacts-list {
+        
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+    }
+
+    .contacts-item{
+        display: inline-block;
+      
+      }
+
+    .email{
+        padding-top: 16px;
+        padding-bottom: 6px;
+      }
+      .tel{
+        padding-top: 6px;
+        padding-bottom: 16px;
+      }
+
+    .container{
         width: 768px;
+        
     }
 
     .hero-titel {
@@ -30,7 +76,7 @@
 
     .advant-item{
         width: calc((100% - 24px) /2);
-        width: 356px;
+        
              
     }
     .advant-list{
@@ -40,6 +86,231 @@
         text-align: start;
         
     }
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 72px;
 
+    }
    
+ 
+    .team-item:not(:last-child){
+        margin-bottom: 0;
+      }
+
+    
+
+    .tab-container{
+        width: 552px;
+        margin: 0 auto;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .customers-list {
+        gap: 24px;
+        row-gap: 72px;
+        
+      }
+      .customers-item {
+        width: 168px;
+      }
+      .footer-logo {
+        
+        text-align: start;
+      }
+
+      .footer-text {
+        
+        max-width: 264px;
+        
+      }
+      .social-media-titel {
+          
+       text-align: start;
+    }
+    .footer-form-text{
+        text-align: start;
+    }
+    .footer-input {
+      width: 264px;
+    }
+
+
+      
+    .footer-container {
+  
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .footer-form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .footer-input {
+      margin-bottom: 0;
+  }
+
+}
+@media screen and (min-width: 1440px){
+    .nav-item {
+       
+        display: flex;
+    }
+
+    .contacts {
+       
+        display: block;
+      }
+
+    .contacts-item {
+        display: flex;
+        gap: 40px;
+      }
+
+    .contacts-list {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+           
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    
+    }
+
+
+    .container {
+        width: 1158px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .hero-section {
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+    .hero-titel{
+        margin-bottom: 48px;
+    }
+
+    .advantages-section {
+        padding: 120px 0;
+    }
+    .advant-list{
+        padding: 0;
+       
+        }
+   
+
+    .advant-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        
+      }
+      .advant-text{
+        font-weight: 400;
+       
+        
+      }
+
+    .advant-icon-list {
+        background-color: #f4f4fd;
+      
+        width: auto;
+        height: 112px;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        border-radius: 4px;
+        margin-bottom: 8px;
+      
+      }
+      .advant-item{
+        width: calc((100% - 72px) /4);
+           
+    }
+    .work-section {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 120px;
+      }
+      
+      .work-title {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .work-list {
+        display: flex;
+        gap: 24px;
+      }
+
+      .team-section {
+        
+        padding: 120px 0;
+      
+      }
+
+      .team-list {
+        row-gap: 0;
+        }
+        .customers {
+            padding: 120px 0;
+            
+          }
+
+          .customers-list {
+            
+            row-gap: 0;
+          }
+
+          .footer {
+            
+            padding:100px 0;
+            
+          }
+          .footer-container {
+            width: 1158px;
+            padding-right: 15px;
+            padding-left: 15px;
+  
+            
+          }
+
+          .footer-info {
+            margin-bottom: 0;
+            /* margin-right: 120px; */
+          }
+
+          .social-media {
+            margin: 0 ;
+            margin-left: 120px;
+            margin-bottom: 0;
+
+           
+          }
+
+          .footer-input {
+            
+            opacity: 1;
+        }
+        .footer-form {
+  
+            margin-left: 80px;
+          }
+
+}
+   
+@media screen and (min-width: 768px) and (max-width: 1439.98px){
+    .hero-section  {
+       max-width: 1440px;
+    }
 }
