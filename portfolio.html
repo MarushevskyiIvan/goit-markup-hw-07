@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css">
   </head>
 
   <body>
@@ -31,11 +32,11 @@
           >
 
           <ul class="nav-item">
-            <li><a href="./index.html" class="nav-link link">Studio</a></li>
             <li>
-              <a href="./portfolio.html" class="nav-link current link"
-                >Portfolio</a
-              >
+              <a href="./index.html" class="nav-link  link">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="nav-link current link">Portfolio</a>
             </li>
             <li><a href="" class="nav-link link">Contacts</a></li>
           </ul>
@@ -44,48 +45,159 @@
         <address class="contacts">
           <ul class="contacts-item">
             <li>
-              <a href="mailto:info@devstudio.com" class="contacts-list link"
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-list email link"
                 >info@devstudio.com</a
               >
             </li>
 
             <li>
-              <a href="tel:+110001111111" class="contacts-list link"
+              <a href="tel:+110001111111" class="contacts-list tel link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
       </div>
+
+      <!-------- Mobile-Menu --------->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <div>
+            <button type="button" class="mob-close-btn" data-menu-close>
+              <svg class="modal-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            
+            <ul class="mob-menu-item">
+              <li>
+                <a href="./index.html" class="mob-menu-link  link"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="mob-menu-link current link"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a href="" class="mob-menu-link link">Contacts</a></li>
+            </ul>
+          </div>
+
+          <address class="mob-contacts">
+            <ul class="mob-contacts-item">
+              <li>
+                <a href="tel:+110001111111" class="mob-contacts-list tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts-list email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <div class="mob-social-media">
+              <ul class="mob-soc-list">
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    class="mob-soc-link link"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    class="mob-soc-link link"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    class="mob-soc-link link"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="mob-soc-item">
+                  <a
+                    href=""
+                    class="mob-soc-link link"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                  >
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </address>
+        </div>
+      </div>
+      <button type="button" class="mob-open-btn" data-menu-open>
+        <svg class="modal-btn-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu-hamburger"></use>
+        </svg>
+      </button>
     </header>
 
     <main>
       <!-- Portfolio -->
       <section class="portfolio-section">
-        <div class="container">
-          <h1 class="visually-hidden">Portfolio</h1>
-
-          <ul class="btn-container">
-            <li><button type="button" class="portfolio-btn">All</button></li>
-
-            <li>
-              <button type="button" class="portfolio-btn">Web Site</button>
-            </li>
-
-            <li>
-              <button type="button" class="portfolio-btn">App</button>
-            </li>
-
-            <li>
-              <button type="button" class="portfolio-btn">Design</button>
-            </li>
-
-            <li>
-              <button type="button" class="portfolio-btn">Marketing</button>
-            </li>
-          </ul>
-
+        <div class="container portfolio-container">
+          
+            <h1 class="visually-hidden">Portfolio</h1>
+            
+            <ul class="btn-container">
+              <li><button type="button" class="portfolio-btn">All</button></li>
+            
+              <li>
+                <button type="button" class="portfolio-btn">Web Site</button>
+              </li>
+            
+              <li>
+                <button type="button" class="portfolio-btn">App</button>
+              </li>
+            
+              <li>
+                <button type="button" class="portfolio-btn">Design</button>
+              </li>
+            
+              <li>
+                <button type="button" class="portfolio-btn">Marketing</button>
+              </li>
+            </ul>
+            
+          
           <ul class="portfolio-list">
+
             <li class="portfolio-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-overlay">
@@ -294,8 +406,8 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
-      <div class="container footer-container">
+     <footer class="footer">
+      <div class="footer-container tab-container">
         <div class="footer-info">
           <a href="./index.html" class="footer-logo logo link"
             >Web<span class="footer-logo-style">Studio</span>
@@ -381,12 +493,13 @@
             <button class="footer-form-btn" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-subscribe"></use>
+                <use href="./images/icons.svg#subscribe-icon"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
