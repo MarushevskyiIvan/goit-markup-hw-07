@@ -28,43 +28,51 @@
   <body>
     <!-- heder -->
     <header class="head">
-      <div class="container head-nav">
-        <nav class="nav-list">
-          <a href="./index.html" class="logo link"
-            >Web<span class="logo-style">Studio</span></a
-          >
+      <div class="mob-header container">
+        <div class="head-nav">
+          <nav class="nav-list">
+            <a href="./index.html" class="logo link"
+              >Web<span class="logo-style">Studio</span>
+            </a>
+            <ul class="nav-item">
+              <li>
+                <a href="./index.html" class="nav-link current link">Studio</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+              </li>
+              <li><a href="" class="nav-link link">Contacts</a></li>
+            </ul>
+          </nav>
 
-          <ul class="nav-item">
-            <li>
-              <a href="./index.html" class="nav-link current link">Studio</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
-            </li>
-            <li><a href="" class="nav-link link">Contacts</a></li>
-          </ul>
-        </nav>
+          <address class="contacts">
+            <ul class="contacts-item">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-list email link"
+                  >info@devstudio.com</a
+                >
+              </li>
 
-        <address class="contacts">
-          <ul class="contacts-item">
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="contacts-list email link"
-                >info@devstudio.com</a
-              >
-            </li>
+              <li>
+                <a href="tel:+110001111111" class="contacts-list tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
 
-            <li>
-              <a href="tel:+110001111111" class="contacts-list tel link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <button type="button" class="mob-open-btn" data-menu-open>
+          <svg class="modal-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
 
       <!-------- Mobile-Menu --------->
+
       <div class="mob-menu is-hidden" data-menu>
         <div class="mob-container">
           <div>
@@ -73,7 +81,7 @@
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </button>
-            
+
             <ul class="mob-menu-item">
               <li>
                 <a href="./index.html" class="mob-menu-link current link"
@@ -164,11 +172,6 @@
           </address>
         </div>
       </div>
-      <button type="button" class="mob-open-btn" data-menu-open>
-        <svg class="modal-btn-icon" width="32" height="22">
-          <use href="./images/icons.svg#icon-menu-hamburger"></use>
-        </svg>
-      </button>
     </header>
 
     <main>
@@ -247,6 +250,7 @@
           <ul class="work-list">
             <li class="work-item">
               <img
+                srcset="./images/work-1.jpg 1x, ./images/work-1-2x.jpg 2x"
                 src="./images/work-1.jpg"
                 alt="computer with open website"
                 width="360"
@@ -256,6 +260,7 @@
 
             <li class="work-item">
               <img
+                srcset="./images/work-2.jpg 1x, ./images/work-2-2x.jpg 2x"
                 src="./images/work-2.jpg"
                 alt="mobile app"
                 width="360"
@@ -265,6 +270,7 @@
 
             <li class="work-item">
               <img
+                srcset="./images/work-3.jpg 1x, ./images/work-3-2x.jpg 2x"
                 src="./images/work-3.jpg"
                 alt="mobile in hand"
                 width="360"
@@ -276,11 +282,12 @@
       </section>
       <!-- section-4 Team -->
       <section class="team-section">
-        <div class="tab-container container">
+        <div class="container tab-container">
           <h2 class="team-title title-tex-style">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x"
                 src="./images/team-1.jpg"
                 alt="man with beard and shirt"
                 width="264"
@@ -348,6 +355,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x"
                 src="./images/team-2.jpg"
                 alt="young man in a shirt"
                 width="264"
@@ -415,6 +423,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x"
                 src="./images/team-3.jpg"
                 alt="young girl in a pink sweater"
                 width="264"
@@ -482,6 +491,7 @@
 
             <li class="team-item">
               <img
+                srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x"
                 src="./images/team-4.jpg"
                 alt="young guy in a gray t-shirt"
                 width="264"
@@ -551,7 +561,7 @@
       </section>
       <!--Section-5  Customers -->
       <section class="customers">
-        <div class="tab-container container">
+        <div class="container tab-container">
           <h2 class="title-tex-style">Customers</h2>
 
           <ul class="customers-list">
@@ -638,7 +648,7 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-container tab-container">
+      <div class="footer-container  tab-container container">
         <div class="footer-info">
           <a href="./index.html" class="footer-logo logo link"
             >Web<span class="footer-logo-style">Studio</span>
