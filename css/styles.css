@@ -102,7 +102,7 @@ img {
   overflow: hidden;
 }
 
-/* ___________________HEDER_________________ */
+/* ________________________________HEDER______________________________________ */
 
 
 .head {
@@ -112,24 +112,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.mob-container{
-  max-width: 428px;
-  height: 100%;
-  margin: 0 auto;
-  
-  padding: 24px 24px 40px 40px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mob-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
@@ -157,6 +139,28 @@ display: none;
 
 .contacts-item{
   display: none;
+}
+
+/* _____________________________Mob-Heder_______________________________ */
+
+
+
+.mob-container{
+  max-width: 428px;
+  height: 100%;
+  margin: 0 auto;
+  
+  padding: 24px 24px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mob-menu-link:focus,
@@ -213,6 +217,12 @@ display: none;
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mob-close-btn:focus{
+  background: var(--hover-focus-color);
+  color: #ffffff;
+  border: none;
+}
+
 .mob-menu-item{
 margin-bottom: 30px;
 }
@@ -249,29 +259,26 @@ margin-bottom: 30px;
   display: inline-block;
 }
 
-.mob-contacts-item {
-  margin-bottom: 48px;
+.mob-contacts-list:focus {
+  color: var(--hover-focus-color);
 }
 
-.tel{
-  padding-bottom: 20px;
+.mob-contacts-item {
+  margin-bottom: 48px;
 }
 
 .email{
   padding-top: 20px;
 }
 
-.mob-contacts-list:focus {
-  color: var(--hover-focus-color);
-}
-
 .tel{
   color:var(--logo-btn-color);
+
+  padding-bottom: 20px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-   
   letter-spacing: 0.02em;
 }
 
@@ -326,7 +333,8 @@ margin-bottom: 30px;
 }
 
 
-/* _______________HERO ______________*/
+/* __________________________________HERO _______________________________________*/
+
 
 .hero-section {
   background-color: var(--background-grey-color);
@@ -368,7 +376,6 @@ margin-bottom: 30px;
 }
 
 .hero-container {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -406,10 +413,10 @@ margin-bottom: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* _______________ Advantages_______________ */
+/* __________________________________ Advantages__________________________________ */
+
 
 .advantages-section {
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -441,24 +448,22 @@ margin-bottom: 30px;
   display: none;
 }
 
-/* _______________Our Works________________ */
+/* ___________________________________Our Works______________________________ */
+
 
 .work-section {
   display: none;
 }
 
-/* ______________Team-Section________________ */
+/* ________________________________Team-Section________________________________ */
+
 
 .team-section {
   background-color: var(--background-light-color);
+
   padding: 96px 0;
   width: 100%;
-  margin: 0 auto;
 }
-
-.team-list {
-    margin: 0 auto;
-  }
 
 .team-item {
   background: #ffffff;
@@ -519,11 +524,11 @@ margin-bottom: 30px;
   height: 16px;
 }
 
-/* __________________Customers____________ */
+/* ____________________________Customers_______________________________ */
+
 
 .customers {
   padding: 96px 0;
-  margin: 0 auto;
 }
 
 .customers-list {
@@ -569,7 +574,8 @@ margin-bottom: 30px;
   fill: currentColor;
 }
 
-/* _______________Footer________________ */
+/* ______________________________Footer________________________________ */
+
 
 .footer {
   background-color: var(--background-grey-color);
@@ -656,7 +662,7 @@ margin-bottom: 30px;
   fill: var(--background-light-color);
 }
 
-/* _________________Footer-Form_________________ */
+/* _______________Footer-Form______________ */
 
 .footer-form-text {
   color: #ffffff;
@@ -725,7 +731,8 @@ margin-bottom: 30px;
   margin-left: 16px;
 }
 
-/* ________________Modal_______________ */
+/* ________________________________Modal________________________________ */
+
 
 .backdrop {
   width: 100%;
@@ -740,9 +747,6 @@ margin-bottom: 30px;
 .modal {
   background: #fcfcfc;
   width: calc(100% - 36px);
-  
-  min-height: 584px;
-  
   padding: 72px 16px 16px;
 
   position: absolute;
@@ -803,7 +807,8 @@ margin-bottom: 30px;
   pointer-events: none;
 }
 
-/* __________________Modal Form_________________ */
+/* ________________Modal Form_______________ */
+
 .modal-title {
   color: var(--title-text-color);
 
@@ -992,7 +997,8 @@ margin-bottom: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* _______________Portfolio_________________ */
+/* _____________________________________Portfolio___________________________________ */
+
 
 .portfolio-section {
   padding: 48px 0;
@@ -1000,7 +1006,6 @@ margin-bottom: 30px;
 }
 .portfolio-container{
   max-width: 428px;
-  margin: 0 auto;
 }
 
 .portfolio-btn {
@@ -1042,13 +1047,9 @@ margin-bottom: 30px;
   row-gap: 16px;
   
   margin-bottom: 48px;
-  max-width: 275px;
 }
 
-
 .portfolio-list {
-  margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1065,6 +1066,13 @@ margin-bottom: 30px;
   
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-overlay {
@@ -1091,18 +1099,11 @@ margin-bottom: 30px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
-  border: 1px solid #F4F4FD;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .card-portfolio-text {
   padding: 32px 16px;
 
   border-right:1px solid #F4F4FD ;
-  border-bottom:1px solid #F4F4FD ;
+  border-bottom:1px solid #F4F4FD ; 
   border-left:1px solid #F4F4FD ;
-  border-bottom:1px solid #F4F4FD ;
+  
 }

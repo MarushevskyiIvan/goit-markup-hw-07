@@ -34,7 +34,7 @@
   @media screen and (min-width: 768px) {
     .container {
       max-width: 768px;
-      /* margin: 0 auto; */
+      
     }
     .mob-menu {
       display: none;
@@ -249,25 +249,32 @@
     .modal {
       padding: 72px 24px 24px;
       width: 408px;
+      height: 584px;
+    }
+
+    .portfolio-section {
+      padding: 64px 0 96px 0;
+      
     }
     .portfolio-btn {
       padding: 12px 24px;
     }
     .btn-container {
-      max-width: 598px;
-      margin: 0 auto;
+      /* max-width: 598px; */
+      /* margin: 0 auto; */
       row-gap: 0;
+      flex-wrap: nowrap;
       margin-bottom: 64px;
       justify-content: center;
     }
     .portfolio-container {
       max-width: 768px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
     }
     .portfolio-list {
       display: flex;
       max-width: 356px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
       justify-content: start;
       flex-wrap: wrap;
       gap: 24px;
@@ -407,7 +414,7 @@
       padding: 100px 0;
     }
     .footer-container {
-      width: 1158px;
+      
       padding-right: 15px;
       padding-left: 15px;
     }
@@ -453,6 +460,11 @@
       border-right: 1px solid #E7E9FC;
       
     }
+    .btn-container {
+      margin-bottom: 72px;
+      
+    }
+    
    
   }
 }
