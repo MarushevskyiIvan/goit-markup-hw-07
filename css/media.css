@@ -21,6 +21,12 @@
     width: 392px;
   }
 }
+@media screen and (max-width: 356.98px) {
+
+  .card-portfolio-text>.sub-titel-text-styles{
+    font-size: 16px;
+    }
+}
 /* ~~~~~~~~~~~~~~~~~~ Tab~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width: 768px) {
@@ -284,6 +290,10 @@
     flex-wrap: nowrap;
     margin-bottom: 64px;
     justify-content: center;
+
+    max-width: 597px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .portfolio-container {
@@ -459,11 +469,7 @@
     margin-left: 80px;
   }
 
-  .footer-input {
-    opacity: 1;
-  }
- 
-  .social-media {
+   .social-media {
     margin: 0;
     margin-left: 120px;
     margin-bottom: 0;
